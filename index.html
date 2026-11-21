@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F1 TeleDash • Simulated Telemetry</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+<script src="/static/dashboard.js" defer></script>
+</head><body><main>
+<header><div><div class="eyebrow">SIMULATED MOTORSPORT ANALYTICS</div><h1>F1 <span>TeleDash</span></h1><p>Visualize performance over laps, compare drivers, and inspect sector splits.</p></div><div class="tag">DEMO DATA · NOT OFFICIAL F1</div></header>
+<div class="controls"><label>Driver <select id="driver" aria-label="Driver"></select></label><label>Laps <input type="number" id="laps" min="1" max="100" value="18"></label><button id="refresh">Regenerate simulation</button><span id="status" role="status"></span></div>
+<section class="kpis"><div><small>BEST LAP</small><strong id="best">–</strong></div><div><small>AVG TOP SPEED</small><strong id="speed">–</strong></div><div><small>FINAL TIRE WEAR</small><strong id="wear">–</strong></div><div><small>TOTAL LAPS</small><strong id="count">–</strong></div></section>
+<section class="charts"><article><h2>Speed across laps</h2><canvas id="speedChart"></canvas></article><article><h2>Lap time trend</h2><canvas id="lapChart"></canvas></article><article><h2>Sector comparison</h2><canvas id="sectorChart"></canvas></article><article><h2>Tire wear progression</h2><canvas id="wearChart"></canvas></article></section>
+<section class="standings"><h2>Simulated race standings</h2><div class="table-wrap"><table><thead><tr><th>POS</th><th>DRIVER</th><th>TEAM</th><th>BEST LAP</th><th>RACE TIME</th></tr></thead><tbody id="standings"></tbody></table></div></section>
+<footer>Portfolio reconstruction · Data produced locally with deterministic Python simulation · Charts require internet access to load Chart.js CDN.</footer>
+</main></body></html>
