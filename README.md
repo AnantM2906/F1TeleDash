@@ -2,7 +2,6 @@
 
 **Python · Flask · JavaScript · HTML/CSS · Chart.js**
 
-A full-stack, responsive motorsport telemetry dashboard based on 
 
 ## Features
 - Python telemetry simulator with reproducible lap, speed, sector, and tire-wear values.
