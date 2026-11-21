@@ -2,7 +2,7 @@
 
 **Python · Flask · JavaScript · HTML/CSS · Chart.js**
 
-A full-stack, responsive motorsport telemetry dashboard based on the project listed on Anant Mishra's resume (August 2025). This is a **new reconstruction**, not recovered original project code. All results and driver names are fictional, seeded, and simulated.
+A full-stack, responsive motorsport telemetry dashboard based on 
 
 ## Features
 - Python telemetry simulator with reproducible lap, speed, sector, and tire-wear values.
